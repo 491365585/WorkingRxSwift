@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9229991320F71650008129BE /* Ant+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9229991220F71650008129BE /* Ant+Array.swift */; };
+		9258B27920E60666001D5FCC /* Ant+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258B27820E60666001D5FCC /* Ant+Data.swift */; };
+		929A976720F35BBD003C7FE9 /* Ant+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929A976620F35BBD003C7FE9 /* Ant+Double.swift */; };
+		92E2D5BF2101D145001EEAD8 /* AntOCManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 92E2D5BD2101D145001EEAD8 /* AntOCManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92E2D5C02101D145001EEAD8 /* AntOCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E2D5BE2101D145001EEAD8 /* AntOCManager.m */; };
+		ED2FF8F62123D030007B93E6 /* AntManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2FF8F52123D030007B93E6 /* AntManager.swift */; };
+		ED32F43920CA71270030C294 /* AntFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = ED32F43720CA71270030C294 /* AntFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED32F44920CA71F70030C294 /* Ant+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44020CA71F50030C294 /* Ant+UIView.swift */; };
+		ED32F44A20CA71F70030C294 /* Ant+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44120CA71F60030C294 /* Ant+CGFloat.swift */; };
+		ED32F44B20CA71F70030C294 /* Ant+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44220CA71F60030C294 /* Ant+Dictionary.swift */; };
+		ED32F44C20CA71F70030C294 /* Ant+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44320CA71F60030C294 /* Ant+Date.swift */; };
+		ED32F44D20CA71F70030C294 /* Ant+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44420CA71F60030C294 /* Ant+String.swift */; };
+		ED32F44E20CA71F70030C294 /* Ant+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44520CA71F60030C294 /* Ant+CGRect.swift */; };
+		ED32F44F20CA71F70030C294 /* Ant+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44620CA71F70030C294 /* Ant+UIColor.swift */; };
+		ED32F45020CA71F70030C294 /* Ant+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44720CA71F70030C294 /* Ant+UIImage.swift */; };
+		ED32F45120CA71F70030C294 /* Ant+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F44820CA71F70030C294 /* Ant+UIViewController.swift */; };
+		ED32F4EB20CBF9300030C294 /* Ant+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32F4EA20CBF9300030C294 /* Ant+UIFont.swift */; };
+		EDF9B20521DF1CDB00BF8BA9 /* StringCalculateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B20421DF1CDB00BF8BA9 /* StringCalculateManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9229991220F71650008129BE /* Ant+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ant+Array.swift"; sourceTree = "<group>"; };
+		9258B27820E60666001D5FCC /* Ant+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ant+Data.swift"; sourceTree = "<group>"; };
+		929A976620F35BBD003C7FE9 /* Ant+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ant+Double.swift"; sourceTree = "<group>"; };
+		92E2D5BD2101D145001EEAD8 /* AntOCManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AntOCManager.h; sourceTree = "<group>"; };
+		92E2D5BE2101D145001EEAD8 /* AntOCManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntOCManager.m; sourceTree = "<group>"; };
+		ED2FF8F52123D030007B93E6 /* AntManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntManager.swift; sourceTree = "<group>"; };
+		ED32F43420CA71270030C294 /* AntFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AntFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED32F43720CA71270030C294 /* AntFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AntFramework.h; sourceTree = "<group>"; };
+		ED32F43820CA71270030C294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED32F44020CA71F50030C294 /* Ant+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+UIView.swift"; sourceTree = "<group>"; };
+		ED32F44120CA71F60030C294 /* Ant+CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+CGFloat.swift"; sourceTree = "<group>"; };
+		ED32F44220CA71F60030C294 /* Ant+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+Dictionary.swift"; sourceTree = "<group>"; };
+		ED32F44320CA71F60030C294 /* Ant+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+Date.swift"; sourceTree = "<group>"; };
+		ED32F44420CA71F60030C294 /* Ant+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+String.swift"; sourceTree = "<group>"; };
+		ED32F44520CA71F60030C294 /* Ant+CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+CGRect.swift"; sourceTree = "<group>"; };
+		ED32F44620CA71F70030C294 /* Ant+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+UIColor.swift"; sourceTree = "<group>"; };
+		ED32F44720CA71F70030C294 /* Ant+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+UIImage.swift"; sourceTree = "<group>"; };
+		ED32F44820CA71F70030C294 /* Ant+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ant+UIViewController.swift"; sourceTree = "<group>"; };
+		ED32F4EA20CBF9300030C294 /* Ant+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ant+UIFont.swift"; sourceTree = "<group>"; };
+		EDF9B20421DF1CDB00BF8BA9 /* StringCalculateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCalculateManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED32F43020CA71270030C294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92E2D5BC2101D10F001EEAD8 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				92E2D5BD2101D145001EEAD8 /* AntOCManager.h */,
+				92E2D5BE2101D145001EEAD8 /* AntOCManager.m */,
+			);
+			name = OC;
+			sourceTree = "<group>";
+		};
+		ED32F42A20CA71270030C294 = {
+			isa = PBXGroup;
+			children = (
+				ED32F43F20CA71570030C294 /* Main */,
+				ED32F43620CA71270030C294 /* AntFramework */,
+				ED32F43520CA71270030C294 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED32F43520CA71270030C294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED32F43420CA71270030C294 /* AntFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED32F43620CA71270030C294 /* AntFramework */ = {
+			isa = PBXGroup;
+			children = (
+				ED32F43720CA71270030C294 /* AntFramework.h */,
+				ED32F43820CA71270030C294 /* Info.plist */,
+			);
+			path = AntFramework;
+			sourceTree = "<group>";
+		};
+		ED32F43F20CA71570030C294 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				92E2D5BC2101D10F001EEAD8 /* OC */,
+				ED2FF8F52123D030007B93E6 /* AntManager.swift */,
+				ED32F44120CA71F60030C294 /* Ant+CGFloat.swift */,
+				ED32F44520CA71F60030C294 /* Ant+CGRect.swift */,
+				ED32F44320CA71F60030C294 /* Ant+Date.swift */,
+				ED32F44220CA71F60030C294 /* Ant+Dictionary.swift */,
+				ED32F44420CA71F60030C294 /* Ant+String.swift */,
+				EDF9B20421DF1CDB00BF8BA9 /* StringCalculateManager.swift */,
+				ED32F44620CA71F70030C294 /* Ant+UIColor.swift */,
+				ED32F44720CA71F70030C294 /* Ant+UIImage.swift */,
+				ED32F44020CA71F50030C294 /* Ant+UIView.swift */,
+				ED32F44820CA71F70030C294 /* Ant+UIViewController.swift */,
+				ED32F4EA20CBF9300030C294 /* Ant+UIFont.swift */,
+				9258B27820E60666001D5FCC /* Ant+Data.swift */,
+				929A976620F35BBD003C7FE9 /* Ant+Double.swift */,
+				9229991220F71650008129BE /* Ant+Array.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ED32F43120CA71270030C294 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E2D5BF2101D145001EEAD8 /* AntOCManager.h in Headers */,
+				ED32F43920CA71270030C294 /* AntFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ED32F43320CA71270030C294 /* AntFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED32F43C20CA71270030C294 /* Build configuration list for PBXNativeTarget "AntFramework" */;
+			buildPhases = (
+				ED32F42F20CA71270030C294 /* Sources */,
+				ED32F43020CA71270030C294 /* Frameworks */,
+				ED32F43120CA71270030C294 /* Headers */,
+				ED32F43220CA71270030C294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AntFramework;
+			productName = AntFramework;
+			productReference = ED32F43420CA71270030C294 /* AntFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED32F42B20CA71270030C294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "马义飞";
+				TargetAttributes = {
+					ED32F43320CA71270030C294 = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = ED32F42E20CA71270030C294 /* Build configuration list for PBXProject "AntFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED32F42A20CA71270030C294;
+			productRefGroup = ED32F43520CA71270030C294 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED32F43320CA71270030C294 /* AntFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED32F43220CA71270030C294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED32F42F20CA71270030C294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929A976720F35BBD003C7FE9 /* Ant+Double.swift in Sources */,
+				92E2D5C02101D145001EEAD8 /* AntOCManager.m in Sources */,
+				ED32F44B20CA71F70030C294 /* Ant+Dictionary.swift in Sources */,
+				ED32F45120CA71F70030C294 /* Ant+UIViewController.swift in Sources */,
+				9258B27920E60666001D5FCC /* Ant+Data.swift in Sources */,
+				9229991320F71650008129BE /* Ant+Array.swift in Sources */,
+				ED2FF8F62123D030007B93E6 /* AntManager.swift in Sources */,
+				EDF9B20521DF1CDB00BF8BA9 /* StringCalculateManager.swift in Sources */,
+				ED32F44D20CA71F70030C294 /* Ant+String.swift in Sources */,
+				ED32F44C20CA71F70030C294 /* Ant+Date.swift in Sources */,
+				ED32F45020CA71F70030C294 /* Ant+UIImage.swift in Sources */,
+				ED32F44A20CA71F70030C294 /* Ant+CGFloat.swift in Sources */,
+				ED32F44920CA71F70030C294 /* Ant+UIView.swift in Sources */,
+				ED32F44F20CA71F70030C294 /* Ant+UIColor.swift in Sources */,
+				ED32F4EB20CBF9300030C294 /* Ant+UIFont.swift in Sources */,
+				ED32F44E20CA71F70030C294 /* Ant+CGRect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED32F43A20CA71270030C294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED32F43B20CA71270030C294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED32F43D20CA71270030C294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CMW238Q8DC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AntFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yifeima.AntFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED32F43E20CA71270030C294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CMW238Q8DC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AntFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yifeima.AntFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED32F42E20CA71270030C294 /* Build configuration list for PBXProject "AntFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED32F43A20CA71270030C294 /* Debug */,
+				ED32F43B20CA71270030C294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED32F43C20CA71270030C294 /* Build configuration list for PBXNativeTarget "AntFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED32F43D20CA71270030C294 /* Debug */,
+				ED32F43E20CA71270030C294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED32F42B20CA71270030C294 /* Project object */;
+}

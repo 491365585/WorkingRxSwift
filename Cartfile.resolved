@@ -1,0 +1,7 @@
+github "Alamofire/Alamofire" "4.8.2"
+github "Alamofire/AlamofireImage" "3.5.2"
+github "Daltron/NotificationBanner" "8bcfabbaed533dd64d625718eb7c16e0607b69b7"
+github "SnapKit/SnapKit" "5.0.0"
+github "cbpowell/MarqueeLabel" "4.0.0"
+github "krzyzanowskim/CryptoSwift" "1.0.0"
+github "onevcat/Kingfisher" "5.6.0"

@@ -1,0 +1,19 @@
+# carthage update --platform iOS
+
+#--01--自动布局
+github "SnapKit/SnapKit"
+
+#--02--网络请求
+github "Alamofire/Alamofire"
+
+#--03--图像缓存
+github "Alamofire/AlamofireImage"
+
+#--04--数据加密
+github "krzyzanowskim/CryptoSwift"
+
+#--05--图像缓存
+github "onevcat/Kingfisher"
+
+#--12--顶部消息通知View
+github "Daltron/NotificationBanner" "master"
