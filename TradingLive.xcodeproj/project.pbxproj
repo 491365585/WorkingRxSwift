@@ -16,6 +16,8 @@
 		ED9C920F22C06B9A00F41B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9C920D22C06B9A00F41B4D /* Main.storyboard */; };
 		ED9C921122C06BA400F41B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9C921022C06BA400F41B4D /* Assets.xcassets */; };
 		ED9C921422C06BA400F41B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9C921222C06BA400F41B4D /* LaunchScreen.storyboard */; };
+		EDADB9A122E5581500F338FF /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDADB9A022E5581500F338FF /* HelloViewController.swift */; };
+		EDADB9A322E5A6BD00F338FF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDADB9A222E5A6BC00F338FF /* BaseView.swift */; };
 		EDB50B8722C32B850091EA45 /* MJRefresh+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB50B8622C32B850091EA45 /* MJRefresh+Extension.swift */; };
 		EDB50B8A22C343130091EA45 /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB50B8922C343130091EA45 /* Refreshable.swift */; };
 		EDD8A39722CD8F7C007A5860 /* FoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD8A39622CD8F7C007A5860 /* FoldViewController.swift */; };
@@ -84,6 +86,8 @@
 		ED9C921022C06BA400F41B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED9C921322C06BA400F41B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED9C921522C06BA400F41B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDADB9A022E5581500F338FF /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		EDADB9A222E5A6BC00F338FF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		EDB50B8622C32B850091EA45 /* MJRefresh+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MJRefresh+Extension.swift"; sourceTree = "<group>"; };
 		EDB50B8922C343130091EA45 /* Refreshable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refreshable.swift; sourceTree = "<group>"; };
 		EDD8A39622CD8F7C007A5860 /* FoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +198,14 @@
 			path = TradingLive;
 			sourceTree = "<group>";
 		};
+		EDADB99F22E557FE00F338FF /* hello */ = {
+			isa = PBXGroup;
+			children = (
+				EDADB9A022E5581500F338FF /* HelloViewController.swift */,
+			);
+			path = hello;
+			sourceTree = "<group>";
+		};
 		EDB50B8522C32B6D0091EA45 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +237,7 @@
 			children = (
 				EDD8A39922CD97FD007A5860 /* FoldView.swift */,
 				EDD8A39B22CDC5B8007A5860 /* EspionageView.swift */,
+				EDADB9A222E5A6BC00F338FF /* BaseView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -232,6 +245,7 @@
 		EDE5B32E22C1AF3400011D23 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EDADB99F22E557FE00F338FF /* hello */,
 				EDD8A39522CD8F5D007A5860 /* Fold */,
 				EDE5B32F22C1AF4C00011D23 /* live */,
 			);
@@ -420,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDADB9A322E5A6BD00F338FF /* BaseView.swift in Sources */,
 				EDE5B34F22C1C05400011D23 /* Common.swift in Sources */,
 				EDE5B34C22C1BF1900011D23 /* UITextField+Extension.swift in Sources */,
 				EDE5B34822C1BF1900011D23 /* UIView+Extension.swift in Sources */,
@@ -443,6 +458,7 @@
 				EDE5B33822C1AF4C00011D23 /* LiveSetView.swift in Sources */,
 				EDD8A39E22CEFB6E007A5860 /* UIImage+Extension.swift in Sources */,
 				EDE5B34622C1BF1900011D23 /* EXUIView.swift in Sources */,
+				EDADB9A122E5581500F338FF /* HelloViewController.swift in Sources */,
 				ED9C920A22C06B9A00F41B4D /* AppDelegate.swift in Sources */,
 				EDE5B33622C1AF4C00011D23 /* ResponseView.swift in Sources */,
 				EDE5B34D22C1BF1900011D23 /* UITableView+Extension.swift in Sources */,

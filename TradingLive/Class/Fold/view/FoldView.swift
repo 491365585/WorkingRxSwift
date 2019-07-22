@@ -40,7 +40,6 @@ class FoldView: UIView {
                     return
                 }
                 if isHidden ?? false {
-                    
                     self.imageTopView.layer.transform = CATransform3DIdentity
                     self.imageBottomView.layer.transform = CATransform3DIdentity
                     self.gradientLayer.opacity = 0
@@ -55,6 +54,7 @@ class FoldView: UIView {
                     self.isNext = false
                     self.imageTopView.topPositive()
                     self.imageBottomView.topPositive()
+
                 }
             })
 
@@ -113,7 +113,7 @@ class FoldView: UIView {
     
     //MARK: 手势执行
     
-    public func panFunc(_ pan: UIPanGestureRecognizer){
+    public func panFunc(_ pan: UIPanGestureRecognizer, _ endBlock: @escaping (_ isUser: Bool)->()){
         if !isUserInteractionEnabled {
             return
         }
@@ -140,7 +140,10 @@ class FoldView: UIView {
         
         //.检查用户抬起手势
         if pan.state == UIGestureRecognizer.State.ended {
-            isUserInteractionEnabled = false
+            endBlock(false)
+            self.isUserInteractionEnabled = false
+            
+            
             UIView.animate(withDuration: 0.3, animations: {
                 if self.isLast {
                     ///是上一个了
@@ -159,6 +162,7 @@ class FoldView: UIView {
                 UIView.animate(withDuration: 0.2, animations: {
                     
                 }, completion: { (_) in
+                    endBlock(true)
                     self.isUserInteractionEnabled = true
                 })
                 

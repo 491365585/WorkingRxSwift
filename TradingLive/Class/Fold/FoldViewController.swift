@@ -8,43 +8,70 @@
 
 import Foundation
 import RongJinFramework
+import RxSwift
+import RxCocoa
 
 class FoldViewController: UIViewController {
     
+    var index = 0
     
+    var disposeBag = DisposeBag()
+    
+    @objc func timerClick() {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//            .map{ _ in
+//
+//                self.countDownSeconds - 1
+//
+//            }
+//            .filter{
+//                $0 >= 0
+//            }
+//            .asDriver(onErrorJustReturn: 0)
         
         setupUI()
-        for e in moreView {
-            e.setupTop()
-        }
         let button = UIButton(frame: CGRect(x: 10, y: 30, width: 50, height: 25))
         button.setTitle("返回", for: .normal)
         button.rx.tap.subscribe { [weak self] (_) in
             self?.navigationController?.popViewController(animated: true)
-        }
+        }.disposed(by: button.rx.disposeBag)
+        
         view.addSubview(button)
-        let button1 = UIButton(frame: CGRect(x: mainWidth - 60, y: 30, width: 50, height: 25))
+        var button1 = UIButton(frame: CGRect(x: mainWidth - 60, y: 30, width: 50, height: 25))
         button1.setTitle("首页", for: .normal)
-        button1.rx.tap.subscribe { [weak self] (_) in
-            guard let self = self else {
-                return
-            }
-            ///创建一串view并放置，循环往下翻
-            for eView in self.moreView {
-                self.view.addSubview(eView)
-                eView.setupTop()
-                let a = FoldModel(self.getImage1(), self.getImage1())
-                eView.getBackImage(a.topImage)
-                eView.getPositiveImage(a.topBackImage)
-            }
-            
-            self.getAnim(self.moreView.count - 1)
-            
-        }
+        button1.rx.tap
+            .subscribe(onNext: { _ in
+                self.begin()
+            })
+        
+
+        
+        
+
+        
+//            .bind(to: button1.rx.title(for: .normal))
+//            .disposed(by: button1.rx.disposeBag)
+//        button1.rx.tap.subscribe { [weak self] (_) in
+//            guard let self = self else {
+//                return
+//            }
+//            ///创建一串view并放置，循环往下翻
+//            for eView in self.moreView {
+//                self.view.addSubview(eView)
+//                eView.setupTop()
+//                let a = FoldModel(self.getImage1(), self.getImage1())
+//                eView.getBackImage(a.topImage)
+//                eView.getPositiveImage(a.topBackImage)
+//            }
+//
+//            self.getAnim(self.moreView.count - 1)
+//
+//        }
         
         view.addSubview(button1)
     }
@@ -53,18 +80,18 @@ class FoldViewController: UIViewController {
     fileprivate let baseView = UIImageView()
     fileprivate let topView = UIImageView()
     fileprivate let foldView = FoldView()
-    fileprivate let moreView = [EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight)),
-                                EspionageView(frame: CGRect(x: 0, y: 0, width: mainWidth, height: mainHeight))]
+    fileprivate let moreView = [BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView(),
+                                BaseView()]
     
 }
 
@@ -143,6 +170,47 @@ extension FoldViewController {
 //MARK: -私有
 extension FoldViewController {
     
+    
+    
+    fileprivate func begin() {
+        //            ///创建一串view并放置，循环往下翻
+        view.isUserInteractionEnabled = false
+        index = self.moreView.count
+        for eView in self.moreView {
+            self.view.addSubview(eView)
+            eView.getNewImage(FoldModel(self.getImage1(), self.getImage1()))
+        }
+        Observable<Int>.interval(0.1, scheduler: MainScheduler.instance).subscribe(
+            onNext: {
+                print($0)
+                self.index -= 1
+                print(self.index)
+                
+                DispatchQueue.main.async {
+                    if self.index == 0 {
+                        
+                        for eView in self.moreView {
+                            eView.fuyuan()
+                            eView.removeFromSuperview()
+                        }
+                        self.disposeBag = DisposeBag()
+                        self.view.isUserInteractionEnabled = true
+                        
+                    }
+                    
+                }
+                self.moreView[self.index].anim {
+                    self.view.bringSubviewToFront(self.moreView[self.index])
+                }
+        },
+            onDisposed: {})
+            .disposed(by: self.disposeBag)
+    }
+    
+    fileprivate func anim() {
+
+    }
+    
     @objc fileprivate func panFunc(pan: UIPanGestureRecognizer) {
         switch pan.state {
         case .began:
@@ -168,7 +236,7 @@ extension FoldViewController {
             break
         }
 
-        foldView.panFunc(pan)
+        foldView.panFunc(pan, { self.view.isUserInteractionEnabled = $0 })
     }
     fileprivate func getImage() -> UIImage? {
         
@@ -194,26 +262,10 @@ extension FoldViewController {
     }
     
     
-    fileprivate func getAnim(_ index: Int) {
-        
-        UIView.animate(withDuration: 0.5, animations: { [weak self] in
-            guard let self = self else {
-                return
-            }
-            self.moreView[index].layer.transform = CATransform3DRotate(CATransform3DIdentity, CGFloat(Double.pi), 1, 0, 0)
-        }, completion: { [weak self] (_) in
-            guard let self = self else {
-                return
-            }
-            guard index - 1 <= -1 else {
-                for eView in self.moreView {
-                    eView.layer.transform = CATransform3DIdentity
-                    eView.removeFromSuperview()
-                }
-                return
-            }
-            self.getAnim(index - 1)
-        })
+    fileprivate func getAnim(_ eview: EspionageView) {
+        DispatchQueue.main.async {
+           
+        }
     }
     
 }
